@@ -57,7 +57,7 @@ function draw() {
     // if the ant has died, remove it
     if (v.dead()) {
       ants.splice(i, 1);
-      food.push(createVector(v.position.x, v.position.y));
+      //food.push(createVector(v.position.x, v.position.y));
     } else {
       // every ant has a chance of cloning itself
       let child = v.birth();

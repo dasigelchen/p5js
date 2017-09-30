@@ -71,7 +71,8 @@ Ant.prototype.behaviors = function (good, bad) {
 
 Ant.prototype.birth = function () {
   let r = random(1);
-  if (r < 0.001) {
+  let p = 0.001;
+  if (r < p) {
     return new Ant(this.position.x, this.position.y, this.dna);
   }
 }
